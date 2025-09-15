@@ -25,7 +25,7 @@ class DebtCreateView(generic.CreateView):
     template_name = "debts/create.html"
     model = Debt
     fields = ['debtor_name', 'amount', 'description']
-    success_url = "/"
+    success_url = "/api/debts/"
 
 
 class DebtUpdateView(generic.UpdateView):
